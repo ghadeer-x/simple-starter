@@ -1,0 +1,30 @@
+/* By Athlon Front-End Team */
+
+// /* Core variables */
+@import 'base/vars';
+
+/* Fonts */
+@import 'base/fonts';
+
+
+body {
+  background: #FFF0D8 url('../static/images/design/cats.png') no-repeat;
+  font-family: 'Cairo';
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+canvas {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 1px;
+  top: 60px;
+  right:0px
+}

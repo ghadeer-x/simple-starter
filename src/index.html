@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Starter Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+
+    <div class="center">
+      <canvas id="canvas3d"></canvas>
+      <img src="assets/images/content/hello.png" alt="hello text" />
+      <h1>يا عالم</h1>
+    </div>
+    <%= require('html-loader!./partials/header.html').default %>
+    <%=require('html-loader!./partials/footer.html').default %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.spline.design/lib/anime.min.js"></script>
+    <script src="assets/3d/spline.runtime.min.js"></script>
+    <script>
+        var app = new SpeRuntime.Application();
+        app.start('assets/3d/scene.gltf');
+    </script>
+  </body>
+</html>
